@@ -44,7 +44,6 @@ function Square(props){
     
     handleClick(i) {
         const squares = this.state.squares.slice();
-        // slice method to create a copy of the array
         squares[i] = this.state.xIsNext ? 'X' : 'O';
         this.setState({
             squares: squares,
@@ -102,11 +101,7 @@ function Square(props){
     }
   }
   
-  // ========================================
-  
   ReactDOM.render(
     <Game />,
     document.getElementById('root')
   );
-  
-
